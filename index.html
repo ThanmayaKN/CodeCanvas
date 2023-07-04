@@ -34,7 +34,14 @@
         let jscode = document.getElementById("js-code").value;
         let output = document.getElementById("output");
 
-        output.contentDocument.body.innerHTML = htmlcode + "<style>" + csscode + "</style>";
+        output.contentDocument.open();
+        output.contentDocument.write(htmlcode);
+        output.contentDocument.close();
+
+        let styleTag = output.contentDocument.createElement("style");
+        styleTag.innerHTML = csscode;
+        output.contentDocument.head.appendChild(styleTag);
+
         output.contentWindow.eval(jscode);
     }
 
