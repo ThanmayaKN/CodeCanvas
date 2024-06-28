@@ -1,6 +1,7 @@
 # CodeCanvas
 
 CodeCanvas is a project that aims to replicate the functionality of the popular code editor platform, CodePen. It allows users to write and execute HTML, CSS, and JavaScript code directly in their web browsers. This project is built using HTML, CSS, and JavaScript only, with no external libraries or frameworks.
+https://codecanvas.netlify.app
 
 ## Features
 
